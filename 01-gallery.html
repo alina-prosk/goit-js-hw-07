@@ -1,25 +1,19 @@
 <!DOCTYPE html>
-<html lang="ua">
-
-<head>
+<html lang="en">
+  <head>
     <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>01-gallery</title>
-    <!-- <link rel="stylesheet" href="css/common.css" /> -->
-</head>
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Image gallery</title>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body>
+    <p><a href="index.html">Go back</a></p>
 
-<body>
-<div class="gallery__item">
-    <a class="gallery__link" href="large-image.jpg">
-        <img class="gallery__image" src="small-image.jpg" data-source="large-image.jpg" alt="Image description" />
-    </a>
-    <a class="gallery__link" href="large-image.jpg">
-        <img class="gallery__image" src="small-image.jpg" data-source="large-image.jpg" alt="Image description" />
-    </a>
-</div>
+    <!-- Add gallery items to this list -->
+    <div class="gallery"></div>
 
     <script src="js/01-gallery.js" type="module"></script>
-</body>
-
+  </body>
 </html>
