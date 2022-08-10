@@ -1,13 +1,8 @@
 import { galleryItems } from './gallery-items.js';
 // Change code below this line
+const div = document.querySelector('.gallery');
 
-const insertGallery = (img) => {
-    const div = document.querySelector('.gallery__item');
-    div.insertAdjacentHTML('beforeend', img);
-};
 
-const result = makeGalleryItems(galleryItems);
-insertGallery(result);
 
 const makeGalleryItems = (images)  => 
     images.reduce(
@@ -20,15 +15,11 @@ const makeGalleryItems = (images)  =>
     );
 
 
+const result = makeGalleryItems(galleryItems);
+div.insertAdjacentHTML('beforeend', result);
 
 
-
-// const galleryItemEl = document.querySelector('.gallery__item');
-// const makeGalleryImage = galleryItems
-//     .map(makeGalleryItems).join('');
-
-// galleryItemEl.insertAdjacentHTML('beforeend', makeGalleryImage);
-// console.log(makeGalleryImage);
+// console.log(makeGalleryItems);
 
 
 
